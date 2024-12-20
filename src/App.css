@@ -1,0 +1,49 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.game {
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  font-size: 2em;
+  background-color: #f4f4f4;
+  border: 2px solid #ccc;
+  cursor: pointer;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.status {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.reset-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.reset-button:hover {
+  background-color: #45a049;
+}
